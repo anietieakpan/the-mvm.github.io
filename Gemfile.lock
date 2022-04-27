@@ -77,5 +77,4 @@ DEPENDENCIES
 BUNDLED WITH
    2.3.12
 
-
-bundle lock --add-platform universal-darwin-21
+bundle lock --add-platform x86_64-linux
