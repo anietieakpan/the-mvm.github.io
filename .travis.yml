@@ -4,7 +4,7 @@ before_script:
 - rm -rf public
 - bundle exec jekyll build
 script: 
-# - aws s3 sync public/ s3://waqiti.com --acl public-read --delete
+# - aws s3 sync public/ s3://waqiti.com --delete
 - aws s3 sync public/ s3://waqiti.com --acl public-read --delete
 - aws cloudfront create-invalidation --distribution-id E3IA44SAAFFPGB --path '/*'
 branches:
